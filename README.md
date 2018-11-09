@@ -34,3 +34,6 @@ Note that when you change staged files, and do git status to check their status,
 git branch branch_name
 git checkout branch_name # this would switch to branch_name
 git merge branch_name
+
+## working with remote repository
+git remote # get a list of remote repositories
