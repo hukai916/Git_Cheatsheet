@@ -93,3 +93,4 @@ git branch backup
 * **Undo commits without change log history:<br>**
 git revert commit-hash
   * will create another commit that undo specified commit without changing history
+## Stashing
