@@ -53,11 +53,13 @@ git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
   * The "origin" is the assigned name for remote repository, can be changed.
 * **Submit to remote repository: (use SH key to ignore user info input)<br>**
 git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git <br>
+  * origin is the name of the remote repository while master is the branch name
 git push
 * **Get local copy of remote repository:<br>**
 git clone <url> <where to clone>
 * **Retrieve the latest updates from remote repository:<br>**
 git pull
+  * Useful when working as a team, before git push local changes to master, git pull to retrieve other's update
 
 
 To intentionally un-track sensitive files that contain non-codes related information, put their names into .gitignore file.
