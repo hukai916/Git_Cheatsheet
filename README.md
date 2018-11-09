@@ -1,4 +1,4 @@
-# Git usage cheatsheet
+# Git usage cheat sheet
 ## install Git:
 conda install git
 ## check Git version:
@@ -26,7 +26,7 @@ git clone
 git add
 ## Remove file from staging status:
 git rm --cached <file>
-## Add all file to staging status:
+## Add all files to staging status:
 git add .
 
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
@@ -37,4 +37,5 @@ git merge branch_name
 
 ## working with remote repository
 git remote # get a list of remote repositories
-askja;lksjga
+git remote add origin https://github.com/hukai916/Git_cheat_sheet.git # add remote repository named origin
+git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git # submit the master branch to remote repository
