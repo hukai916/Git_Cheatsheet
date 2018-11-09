@@ -1,41 +1,53 @@
 # Git usage cheat sheet
-## install Git:
+## Basics
+* Install Git:<br>
 conda install git
-## check Git version:
+* Check Git version:<br>
 git --version
-## check Git configuration:
+* Check Git configuration:<br>
 git config --list
-## check Git command help:
+* Check Git command help:<br>
 git config --help
-## initiate a new git under the same folder
+* Initiate a new git under the same folder<br>
 git init
-## config the username and email for first usage:
+* Config the username and email for first usage:<br>
 git config --global user.name 'Kai Hu'
 git config --global user.email 'hukai916@gmail.com'
-## add to the staging/index for future commit:
+* Add to the staging/index for future commit:<br>
 git add
-## submit to local repository:
+* Submit to local repository:<br>
 git commit
-## submit to remote repository: (use SH key to ignore user info input)
+* Submit to remote repository: (use SH key to ignore user info input)<br>
 git push
-## retrieve the latest from remote repository:
+* Retrieve the latest from remote repository:<br>
 git pull
-## clone the remote repository into a new directory:
+* Clone the remote repository into a new directory:<br>
 git clone
-## Add file to staging status:
+* Add file to staging status:<br>
 git add
-## Remove file from staging status:
+* Remove file from staging status:<br>
 git rm --cached <file>
-## Add all files to staging status:
+* Add all files to staging status:<br>
 git add .
 
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
-## to create a branch, first commit all changes, then (if you are working on your own projects, you don't even need to use branches)
+
+## Branching
+To create a branch, first commit all changes, then (if you are working on your own projects, you don't even need to use branches)<br>
+* Create new branch:<br>
 git branch branch_name
-git checkout branch_name # this would switch to branch_name
+* Switch branches:<br>
+git checkout branch_name
+* Merge branches:<br>
 git merge branch_name
 
-## working with remote repository
-git remote # get a list of remote repositories
-git remote add origin https://github.com/hukai916/Git_cheat_sheet.git # add remote repository named origin
-git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git # submit the master branch to remote repository
+## Remote repository
+* Get a list of remote repositories:<br>
+git remote
+* Submit local branch to remote repository:<br>
+git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
+
+Note that "origin" the assigned name for remote repository.
+
+* Submit master branch to remote repository:<br>
+git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git
