@@ -94,3 +94,11 @@ git branch backup
 git revert commit-hash
   * will create another commit that undo specified commit without changing history
 ## Stashing
+* **Listing stash list, save/apply/pop/drop stash:<br>**
+git stash list<br>
+git stash save 'stash_note_goes_here'<br>
+git stash apply stash_header<br>
+git stash pop<br>
+git stash drop stash_header<br>
+
+Stashing is carry-over to different branches.
