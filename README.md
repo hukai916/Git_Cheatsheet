@@ -1,4 +1,4 @@
-# Notes for basic Git usage
+# Git usage cheatsheet
 ## install Git:
 conda install git
 ## check Git version:
@@ -7,8 +7,6 @@ git --version
 git config --list
 ## check Git command help:
 git config --help
-## setup git default text editor to nano:
-git config --global core.editor 'nano's
 ## initiate a new git under the same folder
 git init
 ## config the username and email for first usage:
@@ -32,15 +30,7 @@ git rm --cached <file>
 git add .
 
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
-<<<<<<< HEAD
-
-## to edit git commit comment:
-git commit # this would open the editor
-git commit -m 'your commit note'
-## to ignore files to add:
-save names in .gitignore file
-=======
 ## to create a branch, first commit all changes, then (if you are working on your own projects, you don't even need to use branches)
 git branch branch_name
 git checkout branch_name # this would switch to branch_name
->>>>>>> login
+git merge branch_name
