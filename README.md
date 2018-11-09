@@ -15,14 +15,10 @@ git config --global user.name 'Kai Hu'
 git config --global user.email 'hukai916@gmail.com'
 * **Add to the staging/index for future commit:<br>**
 git add
+* **Remove from staging area:<br>**
+git reset
 * **Submit to local repository:<br>**
 git commit
-* **Submit to remote repository: (use SH key to ignore user info input)<br>**
-git push
-* **Retrieve the latest from remote repository:<br>**
-git pull
-* **Clone the remote repository into a new directory:<br>**
-git clone
 * **Add file to staging status:<br>**
 git add
 * **Remove file from staging status:<br>**
@@ -47,8 +43,13 @@ If you are working on your own project, you don't even need a branch.
 git remote
 * **Submit local branch to remote repository:<br>**
 git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
-* **Submit master branch to remote repository:<br>**
+* **Submit to remote repository: (use SH key to ignore user info input)<br>**
 git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git
+git push
+* **Get local copy of remote repository:<br>**
+git clone https://github.com/hukai916/Git_cheat_sheet.git
+* **Retrieve the latest updates from remote repository:<br>**
+git pull
 
 The "origin" is the assigned name for remote repository, can be changed.
 
