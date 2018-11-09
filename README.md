@@ -1,12 +1,12 @@
 # Git usage cheat sheet
 ## Basics
-* Install Git:<br>
+* **Install Git:<br>**
 conda install git
-* Check Git version:<br>
+* **Check Git version:<br>**
 git --version
-* Check Git configuration:<br>
+* **Check Git configuration:<br>**
 git config --list
-* Check Git command help:<br>
+* **Check Git command help:<br>**
 git config --help
 * Initiate a new git under the same folder<br>
 git init
