@@ -7,6 +7,8 @@ git --version
 git config --list
 ## check Git command help:
 git config --help
+## setup git default text editor to nano:
+git config --global core.editor 'nano's
 ## initiate a new git under the same folder
 git init
 ## config the username and email for first usage:
@@ -30,3 +32,6 @@ git rm --cached <file>
 git add .
 
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
+
+## to edit git commit comment:
+git commit
