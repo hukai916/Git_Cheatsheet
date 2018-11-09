@@ -42,7 +42,7 @@ git merge branch_name
 
 If you are working on your own project, you don't even need a branch.
 
-## Remote repository
+## Remote repository basics
 * **Get a list of remote repositories:<br>**
 git remote
 * **Submit local branch to remote repository:<br>**
@@ -51,3 +51,5 @@ git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
 git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git
 
 The "origin" is the assigned name for remote repository, can be changed.
+
+## Next
