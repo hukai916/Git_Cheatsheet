@@ -43,7 +43,7 @@ git checkout branch_name
 * **Merge branches:<br>**
 git merge branch_name
 
-If you are working on your own project, you don't even need a branch.
+If you are working on your own project, you don't even need a branch. You must commit or stash your changes before you can switch branches.
 
 ## Remote repository basics
 * **Get a list of remote repositories:<br>**
@@ -61,7 +61,6 @@ git clone <url> <where to clone>
 * **Retrieve the latest updates from remote repository:<br>**
 git pull
   * Useful when working as a team, before git push local changes to master, git pull to retrieve other's update
-
 
 To intentionally un-track sensitive files that contain non-codes related information, put their names into .gitignore file.
 
@@ -94,4 +93,3 @@ git branch backup
 * **Undo commits without change log history:<br>**
 git revert commit-hash
   * will create another commit that undo specified commit without changing history
-  
