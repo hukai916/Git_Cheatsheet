@@ -67,4 +67,31 @@ To intentionally un-track sensitive files that contain non-codes related informa
 
 A typical workflow: git branch branch1 -> git checkout branch1 (working on branch1) -> git add -> git commit -> git push -u origin branch1 -> git checkout master -> git pull origin master -> git merge branch1 -> git push master
 
-## Next run
+## Fixing common mistakes
+* **Delete unwanted changes to file:<br>**
+git checkout filename.txt
+  * must be done before git add
+* **Modify commit message:<br>**
+git commit --amend -m "message to change"
+  * this would change git history, may cause trouble if other people already pulled the changes
+* **Move commit to another branch:<br>**
+git log<br>
+git cherry-pick commit-hash-from-other-branch
+git reset --soft commit-hash-to-return-to
+  * git log to get the unique hash for commit to move, cherry-pick to move that commit to current branch
+  * cherry-pick won't delete old commit, to delete, use git reset commit-hash-to-return-to
+  * git reset --soft: tracked file still in staging
+  * git reset --mix: default, tracked file still in working directory
+  * git reset --hard: be careful, will match the status of tracked files back to the state they were. To clean untracked files: git clean -df
+  * git clean -df: really handy, just clean all untracked files.
+* **To undo hard reset<br>**
+git reflog <br>
+git checkout command-hash
+git branch backup
+  * reflog is to pull out the command-hash
+  * checkout command-hash will only create a detached headed file will be deleted later on anyway
+  * to secure, create another branch
+* **Undo commits without change log history:<br>**
+git revert commit-hash
+  * will create another commit that undo specified commit without changing history
+  
