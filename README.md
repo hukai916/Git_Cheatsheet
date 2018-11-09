@@ -34,4 +34,7 @@ git add .
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
 
 ## to edit git commit comment:
-git commit
+git commit # this would open the editor
+git commit -m 'your commit note'
+## to ignore files to add:
+save names in .gitignore file
