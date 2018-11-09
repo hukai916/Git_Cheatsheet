@@ -30,7 +30,7 @@ git rm --cached <file>
 * **Add all files to staging status:<br>**
 git add .<br>
 
-Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
+When you change staged files, and do git status to check their status, they will be listed as changed too.
 
 ## Branching
 * **Create new branch:<br>**
@@ -40,7 +40,7 @@ git checkout branch_name
 * **Merge branches:<br>**
 git merge branch_name
 
-To create a branch, first commit all changes, then (if you are working on your own projects, you don't even need to use branches)<br>
+If you are working on your own project, you don't even need a branch.
 
 ## Remote repository
 * **Get a list of remote repositories:<br>**
@@ -50,5 +50,4 @@ git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
 * **Submit master branch to remote repository:<br>**
 git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git
 
-
-Note that "origin" the assigned name for remote repository.
+The "origin" is the assigned name for remote repository, can be changed.
