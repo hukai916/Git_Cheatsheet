@@ -37,3 +37,4 @@ git merge branch_name
 
 ## working with remote repository
 git remote # get a list of remote repositories
+askja;lksjga
