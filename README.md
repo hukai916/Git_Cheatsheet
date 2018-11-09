@@ -54,6 +54,7 @@ git remote add origin https://github.com/hukai916/Git_cheat_sheet.git
 * **Submit to remote repository: (use SH key to ignore user info input)<br>**
 git push -u origin master https://github.com/hukai916/Git_cheat_sheet.git <br>
   * origin is the name of the remote repository while master is the branch name
+  * usually push to another remote branch for further adjustment before merging with remote master
 git push
 * **Get local copy of remote repository:<br>**
 git clone <url> <where to clone>
@@ -63,5 +64,7 @@ git pull
 
 
 To intentionally un-track sensitive files that contain non-codes related information, put their names into .gitignore file.
+
+A typical workflow: git branch branch1 -> git checkout branch1 (working on branch1) -> git add -> git commit -> git push -u origin branch1 -> git checkout master -> git pull origin master -> git merge branch1 -> git push master
 
 ## Next run
