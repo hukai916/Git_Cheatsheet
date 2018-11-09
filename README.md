@@ -32,9 +32,15 @@ git rm --cached <file>
 git add .
 
 Note that when you change staged files, and do git status to check their status, they will be listed as changed too.
+<<<<<<< HEAD
 
 ## to edit git commit comment:
 git commit # this would open the editor
 git commit -m 'your commit note'
 ## to ignore files to add:
 save names in .gitignore file
+=======
+## to create a branch, first commit all changes, then (if you are working on your own projects, you don't even need to use branches)
+git branch branch_name
+git checkout branch_name # this would switch to branch_name
+>>>>>>> login
