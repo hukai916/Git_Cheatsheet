@@ -114,7 +114,7 @@ Configure by:
 https://sourcegear.com/diffmerge/webhelp/sec__git__mac.html <br>
 
 * **Show changes:<br>**
-git difftool
+git difftool <br>
 git mergetool
 
 ## Other notes
