@@ -74,15 +74,16 @@ git checkout filename.txt
 * **Modify commit message:<br>**
 git commit --amend -m "message to change"
   * this would change git history, may cause trouble if other people already pulled the changes
-* **Move commit to another branch:<br>**
+* **Move commit to another branch and reset:<br>**
 git log<br>
 git cherry-pick commit-hash-from-other-branch
 git reset --soft commit-hash-to-return-to
   * git log to get the unique hash for commit to move, cherry-pick to move that commit to current branch
   * cherry-pick won't delete old commit, to delete, use git reset commit-hash-to-return-to
-  * git reset --soft: tracked file still in staging
-  * git reset --mix: default, tracked file still in working directory
-  * git reset --hard: be careful, will match the status of tracked files back to the state they were. To clean untracked files: git clean -df
+  * git reset: un-stage all staged files
+  * git reset --soft commit-hash: tracked file still in staging
+  * git reset --mix commit-hash: default, tracked file still in working directory
+  * git reset --hard commit-hash: be careful, will match the status of tracked files back to the state they were. To clean untracked files: git clean -df
   * git clean -df: really handy, just clean all untracked files.
 * **To undo hard reset<br>**
 git reflog <br>
@@ -94,9 +95,7 @@ git branch backup
 * **Undo commits without change log history:<br>**
 git revert commit-hash
   * will create another commit that undo specified commit without changing history
-<<<<<<< Updated upstream
 
-=======
 ## Stashing
 * **Listing stash list, save/apply/pop/drop stash:<br>**
 git stash list<br>
@@ -106,14 +105,21 @@ git stash pop<br>
 git stash drop stash_header<br>
   * stashing will hide changed files both **staged** and **unstaged** but not untracked files, untracked files will still be in the working directory, even if you switch branches
 
-
 Stashing can be carried over to different branches.
 
 ## Better diffmerge
-Diffmerge is a better option changes visualization. <br>
+Diffmerge provides better change visualization options. <br>
 Download and install: https://sourcegear.com/diffmerge/downloaded.php <br>
 Configure by:
 https://sourcegear.com/diffmerge/webhelp/sec__git__mac.html <br>
 
 * **Show changes:<br>**
 git difftool
+git mergetool
+
+## Other notes
+* **More on git add:<br>**
+git add -A/--all: add all files no matter which directory you are currently in <br>
+git add -u/--update: add all tracked files in the entire tree <br>
+git add .: add all in the current directory <br>
+git add \*: strongly not recommended, \* is not Git language
