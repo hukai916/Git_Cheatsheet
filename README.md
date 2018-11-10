@@ -43,7 +43,7 @@ git checkout branch_name
 * **Merge branches:<br>**
 git merge branch_name
 
-If you are working on your own project, you don't even need a branch. You must commit or stash your changes before you can switch branches.
+If you are working on your own project, you don't even need a branch.
 
 ## Remote repository basics
 * **Get a list of remote repositories:<br>**
@@ -61,6 +61,7 @@ git clone <url> <where to clone>
 * **Retrieve the latest updates from remote repository:<br>**
 git pull
   * Useful when working as a team, before git push local changes to master, git pull to retrieve other's update
+
 
 To intentionally un-track sensitive files that contain non-codes related information, put their names into .gitignore file.
 
@@ -93,13 +94,26 @@ git branch backup
 * **Undo commits without change log history:<br>**
 git revert commit-hash
   * will create another commit that undo specified commit without changing history
+<<<<<<< Updated upstream
+
+=======
 ## Stashing
 * **Listing stash list, save/apply/pop/drop stash:<br>**
 git stash list<br>
 git stash save 'stash_note_goes_here'<br>
-  * stashing will hide changed files both **staged** and **unstaged** but not untracked files, untracked files will still be in the working directory, even if you switch branches
 git stash apply stash_header<br>
 git stash pop<br>
 git stash drop stash_header<br>
+  * stashing will hide changed files both **staged** and **unstaged** but not untracked files, untracked files will still be in the working directory, even if you switch branches
 
-Stashing is carry-over to different branches.
+
+Stashing can be carried over to different branches.
+
+## Better diffmerge
+Diffmerge is a better option changes visualization. <br>
+Download and install: https://sourcegear.com/diffmerge/downloaded.php <br>
+Configure by:
+https://sourcegear.com/diffmerge/webhelp/sec__git__mac.html <br>
+
+* **Show changes:<br>**
+git difftool
