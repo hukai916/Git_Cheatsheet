@@ -97,7 +97,7 @@ git revert commit-hash
 * **Listing stash list, save/apply/pop/drop stash:<br>**
 git stash list<br>
 git stash save 'stash_note_goes_here'<br>
-  * stashing will hide both **staged** and **unstaged** files but not untracked files, untracked file will still be in the working directory, even if you switch branches
+  * stashing will hide changed files both **staged** and **unstaged** but not untracked files, untracked files will still be in the working directory, even if you switch branches
 git stash apply stash_header<br>
 git stash pop<br>
 git stash drop stash_header<br>
